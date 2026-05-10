@@ -14,7 +14,7 @@ pipeline{
             sh 'npm run build' 
         }
     }
-    stage('Post Build Actions'){
+    stages('Post Build Actions'){
         steps{
             sh 'echo "Build Completed Successfully"'
             sh 'sudo cp -r disk/* /var/www/html/'
