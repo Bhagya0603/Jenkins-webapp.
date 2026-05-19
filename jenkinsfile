@@ -2,7 +2,7 @@ pipeline{
     agent {label 'frontend'}
     environment {
 
-        APP_SERVER = "172.31.39.224"
+        APP_SERVER = "172.31.37.212"
         DEPLOY_DIR = "/var/www/html"
     }
     stages{
